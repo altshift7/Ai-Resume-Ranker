@@ -45,35 +45,6 @@ AI-Resume-Ranker/
 
 ---
 
-## ⚙️ Installation & Setup  
-
-### 1️⃣ Clone the repository  
-```bash
-git clone https://github.com/your-username/AI-Resume-Ranker.git
-cd AI-Resume-Ranker
-
-### 2️⃣ Create a virtual environment
-python -m venv venv
-source venv/bin/activate   # On Linux/Mac
-venv\Scripts\activate      # On Windows
-
-
-### 3️⃣ Install dependencies
-pip install -r requirements.txt
-
-### 4️⃣ Set environment variables
-
-Create a .env file in the project root and add your OpenAI API key:
-OPENAI_API_KEY=your_api_key_here
-
-### 5️⃣ Run the Flask app
-python app.py
-
-Now open http://127.0.0.1:5000/
- in your browser.
-
----
-
 ### 📸 Screenshots
 <img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/8457a081-c0e6-42db-b61d-f34db21123f7" />
 
