@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Ranker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            background:  url("{{ url_for('static', filename='bg1.png') }}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Resume Ranker</h1>
+            <p class="subtitle">Upload your resume and job description to get a compatibility score</p>
+        </header>
+        
+        <div class="form-container">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="error">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+            
+            <form method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="resume">Upload Resume (PDF):</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="job_description">Paste Job Description:</label>
+                    <textarea id="job_description" name="job_description" placeholder="Paste the job description here..." required>{% if jd %}{{ jd }}{% endif %}</textarea>
+                </div>
+                
+                <button type="submit">Analyze Compatibility</button>
+            </form>
+            
+            {% if score %}
+            <div class="result">
+                <h2>Compatibility Result</h2>
+                <div class="score">{{ score }}/100</div>
+                <div class="feedback">
+                    <strong>Feedback:</strong> {{ feedback }}
+                </div>
+            </div>
+            {% endif %}
+            
+            
+        </div>
+    </div>
+</body>
+</html>
