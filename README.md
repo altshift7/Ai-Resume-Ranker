@@ -1,30 +1,18 @@
-AI Resume Ranker 🤖📄
+AI Resume Ranker 
 
 An intelligent web application that analyzes resumes against job descriptions using AI to provide compatibility scores and personalized feedback.
 Ideal for job seekers who want to optimize their resumes for specific roles.
 
-✨ Features
+ Features
 
-📄 PDF Resume Parsing – Extract text using PyMuPDF
+ PDF Resume Parsing – Extract text using PyMuPDF
+ AI-Powered Analysis – Hugging Face Mixtral model for intelligent job matching
+ Compatibility Scoring – Get a 0–100 score with actionable feedback
+ Fallback System – Works without API keys via keyword matching
+ Beautiful UI – Modern, responsive design with background image support
+ Privacy Focused – Resumes and API keys remain local & private
 
-🤖 AI-Powered Analysis – Hugging Face Mixtral model for intelligent job matching
 
-💯 Compatibility Scoring – Get a 0–100 score with actionable feedback
-
-🔄 Fallback System – Works without API keys via keyword matching
-
-🎨 Beautiful UI – Modern, responsive design with background image support
-
-🔒 Privacy Focused – Resumes and API keys remain local & private
-
-🚀 Quick Start
-Prerequisites
-
-Python 3.7+
-
-Git
-
-Web browser
 
 Installation
 # Clone the repository
@@ -71,7 +59,8 @@ Then open 👉 http://localhost:5000
 
 📸 Screenshots
 
-(Add screenshots here once available)
+<img width="1919" height="863" alt="image" src="https://github.com/user-attachments/assets/5b14177c-f869-48e6-9c43-9710cd67c3ab" />
+
 
 <!-- ![Main Interface](screenshots/main.png) ![Results Page](screenshots/results.png) -->
 🛠 Tech Stack
@@ -100,7 +89,7 @@ Ai-Resume-Ranker/
 ├── typings/            # PyMuPDF type definitions
 └── uploads/            # User-uploaded resumes (ignored by git)
 
-🎯 How It Works
+ How It Works
 
 PDF Extraction – Resume text extracted via PyMuPDF
 
@@ -110,17 +99,17 @@ Scoring – Returns compatibility score (0–100)
 
 Feedback – AI + keyword analysis → actionable improvement tips
 
-🤝 Contributing
+ Contributing
 
 We welcome contributions!
 
-🐛 Report issues
+ Report issues
 
-💡 Suggest features
+ Suggest features
 
-📝 Improve docs
+ Improve docs
 
-🔧 Submit PRs
+ Submit PRs
 
 Dev Workflow:
 
@@ -129,24 +118,9 @@ git commit -m "Add amazing feature"
 git push origin feature/amazing-feature
 
 
-Open a Pull Request 🚀
+Open a Pull Request 
 
-📄 License
 
-This project is licensed under the MIT License
-.
-
-⚠️ Disclaimer
-
-This tool provides AI-generated suggestions only. Always:
-
-Review feedback critically
-
-Treat it as guidance, not absolute truth
-
-Avoid uploading sensitive/confidential data
-
-🌟 Star History
 
 🚧 Roadmap
 
